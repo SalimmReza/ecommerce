@@ -12,7 +12,18 @@ const Home = () => {
 
 
     const handleAddItem = product => {
-        console.log(product)
+        let newCart = [];
+        const exists = cart.find(item => item.id === product.id);
+        if (!exists) {
+            product.quantity = 1;
+            newCart = [...cart, product]
+        }
+        else {
+            const rest = cart.filter(item => item.id !== product.id);
+            exists.quantity = exists.quantity + 1;
+            newCart = [...rest, exists];
+        }
+        setCart(newCart);
     }
 
 
