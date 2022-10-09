@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Order from './components/Order';
 import Home from './components/Home';
 import About from './components/About';
+import { ProductAndCardLoader } from './components/Loader';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         },
         {
           path: 'order',
+          loader: ProductAndCardLoader,
           element: <Order></Order>
         },
         {

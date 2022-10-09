@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Card from './Card';
 import Items from './Items';
+import { addToDb, getStoredCart } from './Fakedb'
 
 
 
 const Home = () => {
     const products = useLoaderData();
     const [cart, setCart] = useState([]);
+
+    useEffect(() => {
+
+        const storedCart = getStoredCart();
+        const savedCart = [];
+        for (const id in storedCart) {
+            const addedProduct = products.find(product => product.id === id);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct);
+            }
+        }
+        setCart(savedCart);
+    }, [products])
 
 
 
@@ -24,6 +40,7 @@ const Home = () => {
             newCart = [...rest, exists];
         }
         setCart(newCart);
+        addToDb(product.id);
     }
 
 
