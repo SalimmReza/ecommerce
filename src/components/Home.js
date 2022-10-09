@@ -8,7 +8,9 @@ import { addToDb, getStoredCart } from './Fakedb'
 
 const Home = () => {
     const products = useLoaderData();
+    // console.log(products)
     const [cart, setCart] = useState([]);
+    // console.log(cart);
 
     useEffect(() => {
 

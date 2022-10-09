@@ -15,7 +15,7 @@ const Card = ({ cart }) => {
     const grandTotal = total + shipping + tax;
     return (
         <div>
-
+            <p>{cart.length}</p>
             <p>Selected Items: {quantity}</p>
             <p>Total price: ${total}</p>
             <p>Total Shipping: ${shipping}</p>

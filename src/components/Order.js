@@ -7,7 +7,7 @@ import ReviewItems from './ReviewItems';
 const Order = () => {
 
     const { products, previousCart } = useLoaderData();
-    console.log(products);
+    console.log(previousCart);
     const [cart, setCart] = useState(previousCart)
     console.log(cart);
     // console.log(previousCart);

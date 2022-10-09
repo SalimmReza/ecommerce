@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Items = ({ product, handleAddItem }) => {
-    console.log(product)
+
+    // console.log(product)
     const { name, img, price, shipping, catagoty } = product;
 
     return (

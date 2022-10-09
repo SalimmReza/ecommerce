@@ -14,6 +14,7 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
+      loader: ProductAndCardLoader,
       children: [
         {
           path: '/',
@@ -33,6 +34,7 @@ function App() {
         },
         {
           path: 'about',
+
           element: <About></About>
         }
       ]

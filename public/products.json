@@ -9,8 +9,7 @@
         "ratings": 4,
         "ratingsCount": 3725,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
-        "shipping": 1,
-        "quantity": 0
+        "shipping": 1
     },
     {
         "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
@@ -750,8 +749,7 @@
         "ratings": 4,
         "ratingsCount": 3,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/e1e758585df14bbbb7d8aaf000c95bd7_9366/UNISEX_ORIGINALS_WASHED_BUCKET_White_CM3933_01_standard.jpg",
-        "shipping": 14,
-        "quantity": 0
+        "shipping": 14
     },
     {
         "id": "5991add1-f4ba-4fb9-9b6b-ec59aa2dda60",
