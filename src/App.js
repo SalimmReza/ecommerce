@@ -16,25 +16,23 @@ function App() {
       children: [
         {
           path: '/',
+          loader: () => fetch('products.json'),
           element: <Home></Home>
         },
 
         {
           path: 'home',
+          loader: () => fetch('products.json'),
           element: <Home></Home>
         },
-
-
         {
           path: 'order',
           element: <Order></Order>
         },
-
         {
           path: 'about',
           element: <About></About>
         }
-
       ]
     }
   ])
